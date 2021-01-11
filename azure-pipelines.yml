@@ -31,4 +31,4 @@ steps:
     azureSubscription: 'Free Trial(78ec30dd-943f-47fb-abd4-a0a1453c1ccd)'
     appType: 'webAppLinux'
     WebAppName: 'webgoatjava'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.jar'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/webgoat-server/target/webgoat-server-v8.2.0-SNAPSHOT.jar.jar'
