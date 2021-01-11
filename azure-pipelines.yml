@@ -35,4 +35,4 @@ steps:
     WebAppName: 'webgoatjava'
     packageForLinux: '/home/vsts/work/1/s/webgoat-server/target/webgoat-server-v8.2.0-SNAPSHOT.jar'
     RuntimeStack: 'JAVA|11-java11'
-    StartupCommand: 'java -jar /home/vsts/work/1/s/webgoat-server/target/webgoat-server-v8.2.0-SNAPSHOT.jar'
+    StartupCommand: 'java -jar webgoat-server/target/webgoat-server-v8.2.0-SNAPSHOT.jar'
