@@ -26,10 +26,13 @@ steps:
     polarisService: 'Demo'
     polarisCommand: 'analyze --coverity-ignore-capture-failure'
 
+
  - task: AzureRmWebAppDeployment@4
    inputs:
-     ConnectionType: 'AzureRM'
-     azureSubscription: 'Free Trial(78ec30dd-943f-47fb-abd4-a0a1453c1ccd)'
-     appType: 'webAppLinux'
-     WebAppName: 'webgoatjava'
-     packageForLinux: '/home/vsts/work/1/s/webgoat-server/target/webgoat-server-v8.2.0-SNAPSHOT.jar'
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Free Trial(78ec30dd-943f-47fb-abd4-a0a1453c1ccd)'
+    appType: 'webAppLinux'
+    WebAppName: 'webgoatjava'
+    packageForLinux: '/home/vsts/work/1/s/webgoat-server/target/webgoat-server-v8.2.0-SNAPSHOT.jar'
+    RuntimeStack: 'JAVA|11-java11'
+    StartupCommand: 'java -jar /home/vsts/work/1/s/webgoat-server/target/webgoat-server-v8.2.0-SNAPSHOT.jar'
