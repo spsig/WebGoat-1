@@ -23,7 +23,7 @@ steps:
 
 - task: SynopsysPolaris@1
   inputs:
-   polarisService: 'Demo server'
+   polarisService: 'Demo'
    polarisCommand: 'analyze -w --coverity-ignore-capture-failure'
 - task: AzureRmWebAppDeployment@4
   inputs:
